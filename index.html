@@ -1,0 +1,37 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeismicStream Plotter</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>SeismicStream Plotter</h1>
+    <p><button id="connectButton">Connect to SeismicStream</button></p>
+    <p><button id="zeroButton" disabled="">Calibrate Zero</button></p>
+    <p>
+        <button id="gain1Button" disabled="">Gain x1</button>
+        <button id="gain2Button" disabled="">Gain x2</button>
+        <button id="gain4Button" disabled="">Gain x4</button>
+        <button id="gain8Button" disabled="">Gain x8</button>
+        <button id="gain16Button" disabled="">Gain x16</button>
+    </p>
+    <p>
+        <button id="sps25Button" disabled="">25 SPS</button>
+        <button id="sps50Button" disabled="">50 SPS</button>
+        <button id="sps100Button" disabled="">100 SPS</button>
+    </p>
+    <p>
+        <button id="input1Button" disabled="">Input 1</button>
+        <button id="input2Button" disabled="">Input 2</button>
+    </p>
+    <p>
+        <button id="bootloaderButton" disabled="">Bootloader</button>
+        Copy <a href="SeismicStream.uf2">SeismicStream.uf2</a> to bootloader drive.
+    </p>
+    
+    <canvas id="chart" width="1374" height="687" style="display: block; box-sizing: border-box; height: 343px; width: 687px;"></canvas>
+
+    <script src="app.js"></script>
+
+
+<deepl-input-controller></deepl-input-controller></body></html>
